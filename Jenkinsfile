@@ -30,7 +30,7 @@ pipeline {
 
         stage('Create Docker Image') {
             steps {
-                sh 'sudo docker build -t my-html-app:latest .'
+                sh 'docker build -t my-html-app:latest .'
             }
         }
 
